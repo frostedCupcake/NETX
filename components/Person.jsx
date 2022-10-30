@@ -9,7 +9,11 @@ const Person = ({ name, designation, i_link, p_link, l_link, info }) => {
     <div className="h-100 w-100 inline-block text-center m-10">
       <div className="h-40 w-40 relative m-auto">
         <Image
-          src={i_link}
+          src={
+            i_link
+              ? i_link
+              : "https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
+          }
           alt={`${name}`}
           layout="fill"
           objectFit="cover"

@@ -106,6 +106,7 @@ export default function Home() {
             i_link={item.i_link}
             p_link={item.p_link}
             info={item.info}
+            key={item.name}
           />
         ))}
       </div>

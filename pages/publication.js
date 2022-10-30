@@ -107,6 +107,7 @@ const publication = () => {
           talk={item.talk}
           slides={item.slides}
           location={item.location}
+          key={item.name}
         />
       ))}
     </div>
