@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
 import Person from "../components/Person";
 export default function Home() {
   const data = [

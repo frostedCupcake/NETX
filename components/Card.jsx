@@ -10,6 +10,7 @@ const Card = () => {
             src="https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
             height="250"
             width="250"
+            alt="heading-image"
           />
         </div>
         <div className="content flex flex-col md:w-[45rem] w-[90%] mx-auto">
