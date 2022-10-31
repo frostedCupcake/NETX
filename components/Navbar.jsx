@@ -61,6 +61,9 @@ const Navbar = () => {
                     router.pathname == "/" ? active_class : not_active_class
                   }
                   aria-current="page"
+                  onClick={() => {
+                    setHidden((prev) => !prev);
+                  }}
                 >
                   Home
                 </a>
@@ -74,6 +77,9 @@ const Navbar = () => {
                       ? active_class
                       : not_active_class
                   }
+                  onClick={() => {
+                    setHidden((prev) => !prev);
+                  }}
                 >
                   People
                 </a>
@@ -87,6 +93,9 @@ const Navbar = () => {
                       ? active_class
                       : not_active_class
                   }
+                  onClick={() => {
+                    setHidden((prev) => !prev);
+                  }}
                 >
                   Research
                 </a>
@@ -100,6 +109,9 @@ const Navbar = () => {
                       ? active_class
                       : not_active_class
                   }
+                  onClick={() => {
+                    setHidden((prev) => !prev);
+                  }}
                 >
                   Publication
                 </a>
@@ -113,6 +125,9 @@ const Navbar = () => {
                       ? active_class
                       : not_active_class
                   }
+                  onClick={() => {
+                    setHidden((prev) => !prev);
+                  }}
                 >
                   Contact
                 </a>
