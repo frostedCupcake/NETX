@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
+  const active_class =
+    "block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0";
+  const not_active_class =
+    "block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0";
   return (
     <nav className="bg-white border-2 px-2 sm:px-4 py-2.5 rounded sticky top-0 z-50">
       <div className="container flex flex-wrap justify-between items-center mx-auto relative">
@@ -39,7 +45,9 @@ const Navbar = () => {
             <li>
               <Link href="/">
                 <a
-                  className="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 "
+                  className={
+                    router.pathname == "/" ? active_class : not_active_class
+                  }
                   aria-current="page"
                 >
                   Home
@@ -48,28 +56,52 @@ const Navbar = () => {
             </li>
             <li>
               <Link href="/people">
-                <a className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <a
+                  className={
+                    router.pathname == "/people"
+                      ? active_class
+                      : not_active_class
+                  }
+                >
                   People
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/research">
-                <a className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
+                <a
+                  className={
+                    router.pathname == "/research"
+                      ? active_class
+                      : not_active_class
+                  }
+                >
                   Research
                 </a>
               </Link>
             </li>
             <li>
               <Link href="/publication">
-                <a className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
+                <a
+                  className={
+                    router.pathname == "/publication"
+                      ? active_class
+                      : not_active_class
+                  }
+                >
                   Publication
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/Contact">
-                <a className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 ">
+              <Link href="/contact">
+                <a
+                  className={
+                    router.pathname == "/contact"
+                      ? active_class
+                      : not_active_class
+                  }
+                >
                   Contact
                 </a>
               </Link>
