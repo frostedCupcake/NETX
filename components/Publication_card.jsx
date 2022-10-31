@@ -14,7 +14,7 @@ const Publication_card = ({ name, people, link, pdf, talk, location }) => {
             alt={name}
           />
         </div>
-        <div className="content flex flex-col md:w-[30rem] w-[90%] mx-auto">
+        <div className="content flex flex-col md:w-[30rem] w-[20rem] mx-auto">
           <h5 className=" text-[.8rem]  py-1">{name}</h5>
           <p className="text-[#333333]  text-[.8rem] pt-1">{people}</p>
           <p className="text-[#333333] text-[.8rem] ">
