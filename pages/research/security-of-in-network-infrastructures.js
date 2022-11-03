@@ -5,11 +5,11 @@ import dataR from "../../data/research";
 const research1 = () => {
   return (
     <ResearchCard
-      heading={dataR[0].heading}
+      heading={dataR[4].heading}
       imageUrl={
         "https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
       }
-      disc={dataR[0].disc}
+      disc={dataR[4].disc}
     />
   );
 };

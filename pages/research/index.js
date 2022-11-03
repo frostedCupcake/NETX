@@ -14,6 +14,7 @@ const research = () => {
           small_disc={item.small_disc}
           disc={item.disc}
           key={item.heading}
+          reference={item.reference}
         />
       ))}
     </div>
