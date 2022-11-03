@@ -20,8 +20,6 @@ const research1 = () => {
         <div className="bg-zinc-300 rounded-md w-[80%] sm:w-[60%] md:w-[45%] p-3">
           <div className="text-[#333333] text-[.9rem]  md:text-[1rem]">
             {data[0].disc}
-            {data[0].disc}
-            {data[0].disc}
           </div>
         </div>
       </div>
