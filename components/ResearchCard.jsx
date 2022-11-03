@@ -4,7 +4,7 @@ import React from "react";
 const ResearchCard = ({ heading, disc, imageUrl }) => {
   return (
     <div className="mx-auto">
-      <div className="text-[1rem]  md:text-[1.3rem] lg:text-[1.5rem] text-center my-3 font-medium">
+      <div className="text-[1.2rem]  md:text-[1.3rem] lg:text-[1.5rem] text-center my-3 font-medium">
         {heading}
       </div>
       <div className="flex flex-col  items-center justify-center gap-10 mt-[3rem]">
