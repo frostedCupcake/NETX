@@ -10,6 +10,8 @@ const research1 = () => {
         "https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
       }
       disc={dataR[3].disc}
+      disc1={dataR[3].disc1}
+      disc2={dataR[3].disc2}
     />
   );
 };
