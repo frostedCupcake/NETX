@@ -13,6 +13,7 @@ const research = () => {
           heading={item.heading}
           small_disc={item.small_disc}
           disc={item.disc}
+          key={item.heading}
         />
       ))}
     </div>
