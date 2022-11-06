@@ -4,6 +4,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Footer from "../components/Footer";
 config.autoAddCss = false;
+import "../css/main.css";
 
 function MyApp({ Component, pageProps }) {
   return (

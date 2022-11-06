@@ -12,8 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex justify-center items-center flex-col ">
-        <Slider />
-        <Feed />
+        <div className="flex justify-center items-center flex-col lg:flex-row">
+          <Slider />
+          <Feed />
+        </div>
         <Discription />
       </div>
     </div>

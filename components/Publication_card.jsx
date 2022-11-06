@@ -15,13 +15,21 @@ const Publication_card = ({ name, people, link, pdf, talk, location }) => {
           />
         </div>
         <div className="content flex flex-col md:w-[30rem] w-[20rem] mx-auto">
-          <h5 className=" text-[.8rem]  py-1">{name}</h5>
+          <h5 className="text-[.8rem]  py-1 text-sky-900 ">{name}</h5>
           <p className="text-[#333333]  text-[.8rem] pt-1">{people}</p>
           <p className="text-[#333333] text-[.8rem] ">
             <Link href={link[1]}>
-              <a>{link[0]}</a>
+              <a className="border-b-2 border-sky-600 text-sky-700">
+                {link[0]}
+              </a>
             </Link>{" "}
-            {location}.
+            {location}{" "}
+            <Link href={pdf}>
+              <a className="border-b-2 border-sky-600 text-sky-700">[pdf]</a>
+            </Link>{" "}
+            <Link href={talk}>
+              <a className="border-b-2 border-sky-600 text-sky-700">[talk]</a>
+            </Link>
           </p>
         </div>
       </div>
