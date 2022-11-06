@@ -19,16 +19,16 @@ const Publication_card = ({ name, people, link, pdf, talk, location }) => {
           <p className="text-[#333333]  text-[.8rem] pt-1">{people}</p>
           <p className="text-[#333333] text-[.8rem] ">
             <Link href={link[1]}>
-              <a className="border-b-2 border-sky-600 text-sky-700">
+              <a className="border-b-[1px] border-sky-600 text-sky-700">
                 {link[0]}
               </a>
             </Link>{" "}
             {location}{" "}
             <Link href={pdf}>
-              <a className="border-b-2 border-sky-600 text-sky-700">[pdf]</a>
+              <a className=" text-sky-700">[pdf]</a>
             </Link>{" "}
             <Link href={talk}>
-              <a className="border-b-2 border-sky-600 text-sky-700">[talk]</a>
+              <a className=" text-sky-700">[talk]</a>
             </Link>
           </p>
         </div>
