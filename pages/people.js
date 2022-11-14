@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h2 className="text-center text-2xl lg:text-3xl p-5">Our group</h2>
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-0 ">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 xl:w-[70rem] lg:w-[80%] sm:w-[40rem] mx-auto ">
         {data.map((item) => (
           <Person
             name={item.name}
