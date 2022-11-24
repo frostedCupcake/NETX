@@ -5,7 +5,7 @@ import data from "../../data/research";
 const research = () => {
   return (
     <div>
-      <h2 className="text-center text-xl p-5 text-gray-500">
+      <h2 className="text-center text-2xl lg:text-3xl p-5 uppercase text-gray-500 font-medium">
         Our research areas
       </h2>
       {data.map((item) => (

@@ -170,7 +170,7 @@ const publication = () => {
   ];
   return (
     <div>
-      <h2 className="text-center md:ml-[20%] md:text-left text-xl  py-5 text-gray-500">
+      <h2 className="text-center md:ml-[20%] md:text-left text-2xl  py-5 text-gray-500 uppercase font-medium">
         All publications
       </h2>
       <h2 className="text-center md:ml-[20%] md:text-left text-[1rem]  p-1 text-gray-500">

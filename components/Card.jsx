@@ -15,10 +15,10 @@ const Card = ({ heading, small_disc, imageUrl, reference }) => {
           />
         </div>
         <div className="content flex flex-col md:w-[45rem] w-[90%] mx-auto">
-          <h5 className="text-sky-900 text-xl  py-3">{heading}</h5>
+          <h5 className="text-[#c03638] text-xl  py-3">{heading}</h5>
           <p className="text-[#333333] text-[.9rem] ">{small_disc}</p>
           <Link href={`${reference}`}>
-            <button className="text-sky-700 text-left py-5 text-[1rem]">
+            <button className="text-[#c03638] font-medium text-left py-5 text-[1rem]">
               find out more
             </button>
           </Link>

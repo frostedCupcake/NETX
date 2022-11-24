@@ -5,7 +5,7 @@ import Image from "next/image";
 const Slider = () => {
   return (
     <div>
-      <div className="md:h-[25rem] md:w-[45rem] w-[20rem] h-[12rem] sm:w-[35rem] sm:h-[20rem] mt-5 shadow-xl lg:h-[27rem]">
+      <div className="md:h-[65rem] md:w-[55rem] w-[20rem] h-[12rem] sm:w-[35rem] sm:h-[20rem] mt-5 shadow-xl lg:h-[27rem]">
         <Carousel>
           <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
             <Image
