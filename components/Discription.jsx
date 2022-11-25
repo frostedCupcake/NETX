@@ -10,12 +10,12 @@ const Discription = () => {
             src={
               "https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
             }
-            height="200"
-            width="200"
+            height="250"
+            width="250"
             alt="heading-image"
           />
         </div>
-        <p className="md:w-[45rem] w-[100%] md:p-5 p-1 text-[.9rem]">
+        <p className="md:w-[45rem] w-[100%] md:p-5 p-1 lg:text-[1.1rem] lg:leading-7 text-[.9rem] md:text-[1rem] leading-6 tracking-wide font-poppins">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid id
           animi magni suscipit, reprehenderit optio dolores corrupti porro
           dignissimos iste recusandae iure officiis eius alias autem eos,
@@ -25,18 +25,18 @@ const Discription = () => {
           reprehenderit facere. Totam laborum ducimus ullam necessitatibus?
         </p>
       </div>
-      <div className="flex flex-row-reverse justify-center items-center gap-10 mt-10">
+      <div className="flex flex-row-reverse mt-5 justify-center items-center gap-10">
         <div className="hidden md:block">
           <Image
             src={
               "https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
             }
-            height="200"
-            width="200"
+            height="250"
+            width="250"
             alt="heading-image"
           />
         </div>
-        <p className="md:w-[45rem] w-[100%] md:p-5 p-1 text-[.9rem]">
+        <p className="md:w-[45rem] w-[100%] md:p-5 p-1 text-[.9rem] lg:text-[1.1rem] lg:leading-7 md:text-[1rem] leading-6 tracking-wide font-poppins">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid id
           animi magni suscipit, reprehenderit optio dolores corrupti porro
           dignissimos iste recusandae iure officiis eius alias autem eos,

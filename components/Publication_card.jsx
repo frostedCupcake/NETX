@@ -9,26 +9,34 @@ const Publication_card = ({ name, people, link, pdf, talk, location }) => {
         <div className="image md:block hidden">
           <Image
             src="https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
-            height="100"
-            width="70"
+            height="120"
+            width="80"
             alt={name}
           />
         </div>
-        <div className="content flex flex-col md:w-[30rem] w-[20rem] mx-auto">
-          <h5 className="text-[.8rem]  py-1 text-[#c03638] ">{name}</h5>
-          <p className="text-[#333333]  text-[.8rem] pt-1">{people}</p>
-          <p className="text-[#333333] text-[.8rem] ">
+        <div className="content flex flex-col md:w-[35rem] w-[20rem] mx-auto">
+          <h5 className="text-[.8rem] md:text-[1rem] text-netx-dark  py-1 font-poppins leading-6 tracking-wide font-bold">
+            {name}
+          </h5>
+          <p className="text-[#333333]  text-[.8rem] pt-1 md:text-[.9rem]">
+            {people}
+          </p>
+          <p className="text-[#333333] text-[.8rem] md:text-[.9rem]">
             <Link href={link[1]}>
-              <a className="border-b-[1px] border-[#b12a2c] text-[#c03638]">
+              <a className="border-b-[1px] md:text-[.9rem] border-netx-dark font-poppins leading-6 tracking-wide font-bold">
                 {link[0]}
               </a>
             </Link>{" "}
             {location}{" "}
             <Link href={pdf}>
-              <a className=" text-[#c03638]">[pdf]</a>
+              <a className=" font-poppins leading-6 tracking-wide font-bold md:text-[.9rem]">
+                [pdf]
+              </a>
             </Link>{" "}
             <Link href={talk}>
-              <a className=" text-[#c03638]">[talk]</a>
+              <a className=" font-poppins leading-6 tracking-wide font-bold md:text-[.9rem]">
+                [talk]
+              </a>
             </Link>
           </p>
         </div>

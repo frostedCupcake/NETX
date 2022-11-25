@@ -7,7 +7,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 const Person = ({ name, designation, i_link, p_link, l_link, info }) => {
   return (
     <div className="h-100 w-100 inline-block text-center m-10">
-      <div className="h-40 w-40 relative m-auto">
+      <div className="h-40 w-40 relative m-auto ">
         <Image
           src={
             i_link
@@ -17,7 +17,7 @@ const Person = ({ name, designation, i_link, p_link, l_link, info }) => {
           alt={`${name}`}
           layout="fill"
           objectFit="cover"
-          className="rounded-full"
+          className="rounded-xl"
         />
       </div>
       <h3 className="font-medium text-[1.1rem] mt-3">{name}</h3>

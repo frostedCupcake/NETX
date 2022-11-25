@@ -9,16 +9,20 @@ const Card = ({ heading, small_disc, imageUrl, reference }) => {
         <div className="image md:block hidden">
           <Image
             src="https://res.cloudinary.com/dbmw0xoar/image/upload/v1666629405/ecell/NetX/math_q80bw1.jpg"
-            height="250"
-            width="250"
+            height="260"
+            width="260"
             alt="heading-image"
           />
         </div>
         <div className="content flex flex-col md:w-[45rem] w-[90%] mx-auto">
-          <h5 className="text-[#c03638] text-xl  py-3">{heading}</h5>
-          <p className="text-[#333333] text-[.9rem] ">{small_disc}</p>
+          <h5 className="font-medium  text-xl md:text-[1.4rem] py-3 font-poppins leading-6 tracking-wide">
+            {heading}
+          </h5>
+          <p className="text-[#333333] text-[.9rem] md:text-[1rem] font-poppins leading-6 tracking-wide">
+            {small_disc}
+          </p>
           <Link href={`${reference}`}>
-            <button className="text-[#c03638] font-medium text-left py-5 text-[1rem]">
+            <button className=" font-bold text-left py-5 text-[1rem]">
               find out more
             </button>
           </Link>

@@ -14,7 +14,7 @@ const Navbar = () => {
     "block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#F05A25] md:p-0";
 
   return (
-    <nav className="bg-white border-2 px-2 sm:px-4 py-2.5 rounded sticky top-0 z-50">
+    <nav className="bg-[#F9F6F7] border-2 px-2 sm:px-4 py-2.5 rounded sticky top-0 z-50 ">
       <div className="container flex flex-wrap justify-between items-center mx-auto relative">
         <Link href="/">
           <a className="flex items-center">
@@ -26,7 +26,7 @@ const Navbar = () => {
         <button
           data-collapse-toggle="navbar-default"
           type="button"
-          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
           aria-controls="navbar-default"
           aria-expanded="false"
           onClick={() => {
@@ -53,7 +53,7 @@ const Navbar = () => {
           className={hidden ? hidden_class : normal_class}
           id="navbar-default"
         >
-          <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
+          <ul className="flex flex-col p-4 mt-4 bg-[#F9F6F7] rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-[1rem] md:font-medium md:border-0 md:bg-[#F9F6F7] font-poppins tracking-wide leading-6 ">
             <li>
               <Link href="/">
                 <a

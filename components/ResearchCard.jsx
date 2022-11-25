@@ -5,7 +5,7 @@ import Person_small from "./Person_small";
 const ResearchCard = ({ heading, disc, imageUrl, disc1, disc2 }) => {
   return (
     <div className="mx-auto">
-      <div className="text-[1.2rem]  md:text-[1.3rem] lg:text-[1.5rem] text-center my-3 font-medium">
+      <div className="text-[1.2rem]  md:text-[1.3rem] lg:text-[1.5rem] text-center mb-3 py-5 font-medium font-poppins leading-6 tracking-wide">
         {heading}
       </div>
       <div className="flex flex-col  items-center justify-center gap-10 mt-[3rem]">
@@ -13,13 +13,13 @@ const ResearchCard = ({ heading, disc, imageUrl, disc1, disc2 }) => {
           <Image src={imageUrl} height="320" width="320" alt="heading-image" />
         </div>
         <div className="bg-zinc-300 rounded-md w-[90%] sm:w-[80%] md:w-[70%] xl:w-[45%] p-4">
-          <div className="text-[#333333] text-[.9rem]  md:text-[1rem] block">
+          <div className="text-[#333333] text-[.9rem]  md:text-[1rem] block font-poppins leading-6 tracking-wide">
             {disc}
           </div>
-          <div className="text-[#333333] text-[.9rem] my-4  md:text-[1rem] block">
+          <div className="text-[#333333] text-[.9rem] my-4  md:text-[1rem] block font-poppins leading-6 tracking-wide">
             {disc1}
           </div>
-          <div className="text-[#333333] text-[.9rem]  md:text-[1rem] block">
+          <div className="text-[#333333] text-[.9rem]  md:text-[1rem] block font-poppins leading-6 tracking-wide">
             {disc2}
           </div>
         </div>
