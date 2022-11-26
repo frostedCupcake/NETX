@@ -15,7 +15,7 @@ const Discription = () => {
             alt="heading-image"
           />
         </div>
-        <p className="md:w-[45rem] w-[100%] md:p-5 p-1 lg:text-[1.1rem] lg:leading-7 text-[.9rem] md:text-[1rem] leading-6 tracking-wide font-poppins">
+        <p className="md:w-[45rem] w-[100%] md:p-5 p-1 lg:text-[1.1rem] lg:leading-7 text-[.9rem] md:text-[1rem] leading-6 tracking-wide font-openSans">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid id
           animi magni suscipit, reprehenderit optio dolores corrupti porro
           dignissimos iste recusandae iure officiis eius alias autem eos,
