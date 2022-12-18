@@ -7,7 +7,7 @@ config.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="bg-[#F9F6F7] overlow-hidden">
+    <div className="bg-[#F9F6F7] overflow-hidden">
       <Navbar />
       <div className="container mx-auto">
         <Component {...pageProps} />
