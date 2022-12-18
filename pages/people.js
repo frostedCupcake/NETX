@@ -27,7 +27,7 @@ export default function Home() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: true, amount: 0 }}
         className={`2xl:max-w-[1280px] w-full mx-auto flex lg:flex-row-reverse flex-col gap-8 md:my-20 my-5 justify-center items-center `}
       >
         <div className="sm:w-[30rem]  md:w-[50rem] mx-auto py-10 text-center">

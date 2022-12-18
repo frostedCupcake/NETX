@@ -21,7 +21,7 @@ const research = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true, amount: 0 }}
     >
       <motion.div variants={textVariant(1.1)} className={heroSText}>
         our research areas
