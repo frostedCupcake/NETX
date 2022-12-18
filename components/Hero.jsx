@@ -26,8 +26,8 @@ const Hero = () => (
           variants={textVariant(1.2)}
           className="flex flex-col justify-center items-center"
         >
-          <h1 className={heroSText}>Network security </h1>
-          <h1 className={`${heroSText} lg:mb-5`}>and systems </h1>
+          <h1 className={heroSText}>Network systems </h1>
+          <h1 className={`${heroSText} lg:mb-5`}>and security </h1>
         </motion.div>
       </div>
     </motion.div>
