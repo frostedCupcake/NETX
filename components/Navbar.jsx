@@ -1,21 +1,34 @@
-import Link from "next/link";
-import React, { useState } from "react";
-import { useRouter } from "next/router";
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
+
+import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
-  let hidden_class = "hidden w-full md:block md:w-auto";
-  let normal_class = " w-full md:block md:w-auto";
+  let hidden_class = 'hidden w-full md:block md:w-auto';
+  let normal_class = ' w-full md:block md:w-auto';
   const router = useRouter();
   let [hidden, setHidden] = useState(true);
 
   const active_class =
-    "block py-2 pr-4 pl-3 text-white bg-[#F05A25] rounded md:bg-transparent md:text-[#F05A25] md:p-0";
+    'block font-bold py-2 pr-4 pl-3 text-white bg-[#F05A25] rounded md:bg-transparent md:text-[#F05A25] md:p-0 transition-all';
   const not_active_class =
-    "block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#F05A25] md:p-0";
+    'block font-bold py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#F05A25] md:p-0 transition-all';
 
   return (
-    <nav className="bg-[#F9F6F7] border-2 px-2 sm:px-4 py-2.5 rounded sticky top-0 z-50 ">
-      <div className="container flex flex-wrap justify-between items-center mx-auto relative">
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0 }}
+      className={`sm:px-16 px-6 py-8  top-0 z-50`}
+    >
+      <div
+        className={`2xl:max-w-[1280px] w-full mx-auto flex justify-between flex-wrap relative items-center gap-8`}
+      >
+        {' '}
+        <div className="absolute w-[50%] inset-0 gradient-01" />
         <Link href="/">
           <a className="flex items-center">
             <span className="self-center text-xl font-semibold whitespace-nowrap ">
@@ -45,10 +58,9 @@ const Navbar = () => {
               fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clip-rule="evenodd"
-            ></path>
+            />
           </svg>
         </button>
-
         <div
           className={hidden ? hidden_class : normal_class}
           id="navbar-default"
@@ -58,7 +70,7 @@ const Navbar = () => {
               <Link href="/">
                 <a
                   className={
-                    router.pathname == "/" ? active_class : not_active_class
+                    router.pathname == '/' ? active_class : not_active_class
                   }
                   aria-current="page"
                   onClick={() => {
@@ -73,7 +85,7 @@ const Navbar = () => {
               <Link href="/people">
                 <a
                   className={
-                    router.pathname == "/people"
+                    router.pathname == '/people'
                       ? active_class
                       : not_active_class
                   }
@@ -89,7 +101,7 @@ const Navbar = () => {
               <Link href="/research">
                 <a
                   className={
-                    router.pathname == "/research"
+                    router.pathname == '/research'
                       ? active_class
                       : not_active_class
                   }
@@ -105,7 +117,7 @@ const Navbar = () => {
               <Link href="/publication">
                 <a
                   className={
-                    router.pathname == "/publication"
+                    router.pathname == '/publication'
                       ? active_class
                       : not_active_class
                   }
@@ -121,7 +133,7 @@ const Navbar = () => {
               <Link href="/contact">
                 <a
                   className={
-                    router.pathname == "/contact"
+                    router.pathname == '/contact'
                       ? active_class
                       : not_active_class
                   }
@@ -136,7 +148,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

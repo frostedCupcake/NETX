@@ -1,7 +1,8 @@
-import Head from "next/head";
-import Discription from "../components/Discription";
-import Feed from "../components/Feed";
-import Slider from "../components/Slider";
+import Head from 'next/head';
+import Discription from '../components/Discription';
+import Feed from '../components/Feed';
+import Slider from '../components/Slider';
+import Hero from '../components/Hero';
 
 export default function Home() {
   return (
@@ -12,10 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex justify-center items-center flex-col">
+        <Hero />
         <Slider />
-
         <Discription />
-        <Feed />
+        {/* <Feed /> */}
       </div>
     </div>
   );
