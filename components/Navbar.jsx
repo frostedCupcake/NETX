@@ -28,7 +28,7 @@ const Navbar = () => {
         className={`2xl:max-w-[1280px] w-full mx-auto flex justify-between flex-wrap relative items-center gap-8`}
       >
         {' '}
-        <div className="absolute w-[50%] inset-0 gradient-01" />
+        <div className="hidden md:visible absolute w-[50%] inset-0 gradient-01" />
         <Link href="/">
           <a className="flex items-center">
             <span className="self-center text-xl font-semibold whitespace-nowrap ">
