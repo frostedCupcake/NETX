@@ -10,7 +10,7 @@ import {
 } from '../utils/motion';
 import Head from 'next/head';
 import Person from '../components/Person';
-import data from '../data/person';
+import { teamData } from '../constants';
 
 const heroSText =
   'font-thin  xl:text-[45px] md:text-[35px] sm:text-[30px] text-[25px]  uppercase text-netx-black-1 block tracking-[.3em]';
@@ -50,7 +50,7 @@ export default function Home() {
             variants={fadeIn('up', 'tween', 0.2, 1)}
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
           >
-            {data.map((item) => (
+            {teamData.map((item) => (
               <Person
                 name={item.name}
                 designation={item.designation}

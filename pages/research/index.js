@@ -10,7 +10,7 @@ import {
 } from '../../utils/motion';
 import React from 'react';
 import Card from '../../components/Card';
-import data from '../../data/research';
+import { researchData } from '../../constants';
 
 const heroSText =
   'font-thin  xl:text-[45px] md:text-[35px] sm:text-[30px] text-[25px]  uppercase text-netx-black-1 block tracking-[.3em] text-center my-10';
@@ -27,7 +27,7 @@ const research = () => {
         our research areas
       </motion.div>
       <motion.div variants={fadeIn('up', 'tween', 0.2, 1)}>
-        {data.map((item) => (
+        {researchData.map((item) => (
           <Card
             heading={item.heading}
             small_disc={item.small_disc}
